@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --font-osword: "Oswald", sans-serif;
+    --font-barlow:"Barlow", sans-serif;
+    --primarywhite:#FFFFFF;
+    --secondarywhite: #dddddd;
+    --secondarycolor: #ff4655;
+    --primaryblack: #121212;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+}
+.title h2{
+    font-family:var(--font-osword) ;
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--primarywhite);
+    letter-spacing: 7%;
+    max-width: 518px;
+    position: relative;
+}
+.title h2::after{
+    content:"";
+    width: 120px;
+    height: 3px;
+    background: var(--secondarycolor);
+    position: absolute;
+    bottom:7px;
+    left: 190px;
+}
+
+nav{
+    position: absolute !important;
+    width: 100%;
+    top: 0;
+}
+header nav .nav-link{
+    color: var(--secondarywhite);
+    font-family: var(--font-osword);
+    font-size: 16px;
+    font-weight: 400;
+}
+.nav-link:hover{
+    color: var(--secondarywhite);
+}
+header nav .navbar-brand{
+    margin-right: 60px;
+}
+header nav .navbar-right button{
+    border:none;
+    background: transparent;
+    color: var(--primarywhite);
+    font-family: var(--font-osword);
+    font-size: 16px;
+    font-weight: 400;
+}
+header nav .navbar-nav{
+    gap: 30px;
+}
+/* banner start */
+#banner{
+    padding-top: 337px;
+    padding-bottom: 439px;
+    background: url("./images/banner.png");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#banner .text_area{
+    color: var(--primarywhite);
+}
+#banner .text_area h3{
+    font-family: var(--font-osword);
+    font-size: 27px;
+    font-weight: 400;
+    letter-spacing: 10%;
+}
+#banner .text_area h1{
+    font-family: var(--font-osword);
+    font-size: 60px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+#banner .text_area h1::after{
+    content:"";
+    width: 90px;
+    height: 4px;
+    background: var(--primarywhite);
+    position: absolute;
+    bottom:0;
+    left: 105%;
+}
+#banner .text_area p{
+    font-family: var(--font-osword);
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 521px;
+    margin-bottom: 48px;
+}
+#banner .text_area button{
+    font-family: var(--font-osword);
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 521px;
+    margin-bottom: 48px;
+    color: black;
+    background: var(--secondarywhite);
+    border: none;
+    padding: 13px 25px;
+
+}
+/* banner end */
+/* about part start */
+#about{
+    background: var(--primaryblack);
+    color: var(--primarywhite);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#about .about_wrapper{
+    display: flex;
+    gap: 82px;
+    margin-top: 57px;
+}
+#about .about_right h3{
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 3%;
+    color: var(--primarywhite);
+    font-family: var(--font-osword);
+    margin-bottom: 7px;
+}
+#about .about_right ul li{
+    list-style: none;
+    font-size: 18px ;
+    font-family: var(--font-barlow);
+    color: var(--primarywhite);
+    margin-bottom: 10px;
+}
+#about .about_right ul li span{
+    margin-left: 10px;
+}
+#about .about_itembox{
+    margin-top: 50px;
+}
+#about .about_itembox .item{
+    width: 100%;
+    padding: 26px 0;
+    background: #212121;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
+}
+#about .about_itembox .item h3{
+    font-size: 60px;
+    font-family: var(--font-barlow);
+    letter-spacing: 3%;
+    color: var(--primarywhite);
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+#about .about_itembox .item h5{
+    font-size: 18px;
+    font-family: var(--font-osword);
+    color: var(--primarywhite);
+    font-weight: 300;
+    margin-top: 18px;
+}
+#about .about_itembox .item h3::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--secondarycolor);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 11px;
+    right: -20px;
+}
+/* about part end */
+/* popular part start */
+#popular{
+    background: #191919;
+    padding-top: 115px;
+    padding-bottom: 90px;
+}
+#popular .title{
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+#popular .title h2::after{
+    left: 200px;
+
+}
+#popular .gamming_item{
+    width: 100%;
+}
+#popular .popular_wrapper{
+    align-items: end;
+    margin-top: -80px;
+}
+#popular .prev_btn{
+    width: 40px;
+    height: 40px;
+    border:1px solid var(--primarywhite);
+    border-radius: 50%;
+    font-size: 20px;
+}
+#popular .prev_btn .carousel-control-prev-icon{
+    width: 40px;
+    height: 40px;
+    border:1px solid var(--primarywhite);
+    border-radius: 50%;
+    font-size: 20px;
+}
+#popular .next_btn {
+    width: 40px;
+    height: 40px;
+    border:1px solid var(--primarywhite);
+    border-radius: 50%;
+    font-size: 20px;
+}
+/* #popular .carousel-inner{
+    overflow: visible;
+} */
+ #popular .slideButton{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+ }
+ #popular .carousel-inner{
+    overflow: visible;
+ }
+/* popular part end */
+/* video part start */
+#video{
+    background: var(--primaryblack);
+    padding: 90px;
+}
+#video .title h2{
+    max-width: 446px;
+}
+#video .title h2::after{
+    left: 145px;
+}
+#video .video_item{
+    width: 100%;
+    height: 275px;
+    position: relative;
+}
+#video .video_item .overlay img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+#video .video_item .overlay #img2{
+    filter: grayscale(50%);
+}
+#video .video_item .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#video .video_item .overlay svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#video .video_item:hover .overlay img{
+    transform: scale(1.1);
+    transition: .4s;
+}
+#video .matches{
+    max-width: 1096px;
+    margin: 0 auto;
+}
+#video .matches_item {
+    margin-top: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+#video .matches_item .item{
+    width: 426px;
+    height:118px ;
+    background: #212121;
+}
+#video .matches_item .left{
+    clip-path: polygon(0 0, 100% 0%, 86% 100%, 0% 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#video .matches_item .left h3{
+    font-family: var(--font-osword);
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--primarywhite);
+    letter-spacing: 15%;
+    margin-right: 45px;
+}
+#video .matches_item .right{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 13% 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#video .matches_item .right h3{
+    font-family: var(--font-osword);
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--primarywhite);
+    letter-spacing: 15%;
+    margin-left: 45px;
+}
+#video .matches_item .middle h2{
+    font-family: var(--font-osword);
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--primarywhite);
+    letter-spacing: 15%;
+}
+/* video part end */
+
+/* team part start */
+#team{
+    background: #191919;
+    padding: 100px 0;
+}
+#team .item{
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+#team .item img{
+    max-width: 100%;
+}
+#team .item .overlay{
+    width: 100%;
+    padding: 40px 30px;
+    background: rgba(37, 36, 36, 0.38);
+    position: absolute;
+    bottom: -170px;
+    left: 0;
+    transition: 0.4s;
+}
+#team .item .overlay h3{
+    font-family: var(--font-osword);
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--primarywhite);
+}
+#team .item .overlay p{
+    font-family: var(--font-osword);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primarywhite);
+}
+#team .item:hover .overlay{
+    bottom: 0;
+}
+/* team part end */
